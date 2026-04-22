@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Score</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1>🏆 Your Score</h1>
+    <p id="score"></p>
+    <a href="index.html" class="btn">Go Home</a>
+</div>
+
+<script>
+const score = localStorage.getItem("quizScore") || 0;
+document.getElementById("score").textContent = `You scored: ${score} / 5`;
+</script>
+</body>
+</html>
